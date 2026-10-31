@@ -438,7 +438,7 @@ Overall ROI = 3,249.38%
 ## 6.5 Required Visualizations and Interpretation
 
 ### 6.5.1 Risk Exposure Before and After Controls
-![Task 6.5.1 - Risk Exposure](task%206.5.1.png)
+![Task 6.5.1. - Risk Exposure](task%206.5.1..png)
 
 Database injection declines from $31.25 million to $7.8125 million. Session hijacking declines from $3 million to $150,000, and API bypass from $750,000 to $75,000. Database injection still drives the bulk of residual exposure, warranting further remediation and validation.
 
