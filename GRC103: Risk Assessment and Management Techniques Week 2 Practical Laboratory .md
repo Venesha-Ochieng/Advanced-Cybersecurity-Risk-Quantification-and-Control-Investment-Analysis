@@ -84,3 +84,106 @@ You are the lead GRC analyst at "SecureBank Financial." The CISO has provided yo
 - Cost: $200,000
 - Effectiveness: 95% reduction in account takeover
 - Maintenance: $30,000/year
+
+# Phase 1: Risk Exposure Calculation
+
+## Task 1: Calculate Annualized Loss Expectancy (ALE)
+
+For each vulnerability, calculate:
+
+### Single Loss Expectancy (SLE)
+
+SLE = Asset Exposure x Loss per Unit
+
+### Annual Rate of Occurrence (ARO)
+
+ARO = Expected Number of Incidents per Year
+
+### Annualized Loss Expectancy (ALE)
+
+ALE = SLE x ARO
+
+## Task 1.1 Critical Finding 1: API Authentication Bypass
+
+**SLE** = $5,000,000
+
+**ARO** = 15/100 = 0.15
+
+**ALE** = $5,000,000 x 0.15 = $750,000
+
+## Task 1.2 Critical Finding 2: Database Injection Vulnerability
+
+**SLE** = Records at Risk x Cost per Record
+
+= 500,000 x $250
+
+= $125,000,000
+
+**ARO** = 25/100 = 0.25
+
+**ALE** = $125,000,000 x 0.25
+
+= $31,250,000
+
+## Task 1.3 Critical Finding 3: Session Hijacking
+
+**SLE** = Accounts at Risk x Average Loss per Account
+
+= 5,000 x $1,500
+
+= $7,500,000
+
+**ARO** = 40/100 = 0.40
+
+**ALE** = $7,500,000 x 0.40
+
+= $3,000,000
+
+### Consolidated Risk Exposure Calculations
+
+| Vulnerability | SLE (USD) | ARO | ALE (USD) |
+|--------------|-----------|------|-----------|
+| API Authentication Bypass | $5,000,000 | 0.15 | $750,000 |
+| Database Injection | $125,000,000 | 0.25 | $31,250,000 |
+| Session Hijacking | $7,500,000 | 0.40 | $3,000,000 |
+| Total | $137,500,000 | - | $35,000,000 |
+
+## Task 2: Prioritize Risks
+
+Create a risk matrix showing:
+
+- Vulnerability
+- SLE
+- ARO
+- ALE
+- Risk Priority Level
+
+### Task 2.1 Risk Prioritization Matrix
+| Vulnerability | SLE (USD) | ARO | ALE (USD) | Risk Priority Level |
+|--------------|-----------|------|-----------|--------------------|
+| Database Injection Vulnerability | $125,000,000 | 0.25 (25%) | $31,250,000 | Critical |
+| Session Hijacking | $7,500,000 | 0.40 (40%) | $3,000,000 | High |
+| API Authentication Bypass | $5,000,000 | 0.15 (15%) | $750,000 | Medium |
+| Total | $137,500,000 | - | $35,000,000 | - |
+
+## Task 2.2 Risk Prioritization Analysis
+
+### Priority 1: Database Injection Vulnerability - Critical Risk
+
+Database injection presents the highest financial exposure, with an ALE of $31,250,000, representing approximately 89.29% of the total estimated annual risk exposure. Successful exploitation could compromise up to 500,000 customer records containing personally identifiable information and financial data. Due to its substantial potential financial, regulatory, and reputational consequences, this vulnerability requires immediate executive attention and urgent remediation.
+
+### Priority 2: Session Hijacking - High Risk
+
+Session hijacking has an ALE of $3,000,000, accounting for approximately 8.57% of total annual risk exposure. With an assumed annual occurrence probability of 40%, it has the highest likelihood among the identified vulnerabilities. Successful exploitation could result in unauthorized account access, fraudulent transactions, and customer financial losses. This vulnerability requires high-priority remediation, particularly through stronger session management and enhanced multi-factor authentication.
+
+### Priority 3: API Authentication Bypass - Medium Risk
+
+API authentication bypass has an ALE of $750,000, representing approximately 2.14% of the total estimated annual financial exposure. Although it has the lowest modeled ALE, the vulnerability remains significant because it affects SecureBank Financial's transaction processing system and could facilitate unauthorized fund transfers. Remediation should focus on strengthening API authentication, authorization controls, transaction monitoring, and fraud detection.
+
+Its Medium classification reflects the illustrative ALE thresholds, not necessarily its operational severity. Given the direct exposure of financial transactions, management may assign a higher treatment priority based on risk appetite and regulatory requirements.
+
+---
+
+## Task 3: Create Risk Visualization
+
+### Task 3.1 Generate a Bar Chart Comparing ALE for All Vulnerabilities
