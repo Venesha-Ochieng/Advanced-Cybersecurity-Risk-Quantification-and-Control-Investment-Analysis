@@ -187,3 +187,173 @@ Its Medium classification reflects the illustrative ALE thresholds, not necessar
 ## Task 3: Create Risk Visualization
 
 ### Task 3.1 Generate a Bar Chart Comparing ALE for All Vulnerabilities
+## Task 3: Create Risk Visualization
+
+### Task 3.1 Generate a Bar Chart Comparing ALE for All Vulnerabilities
+
+ ![Task 3.1 - ALE Comparison](task%203.1.png)
+
+### Task 3.2 Create a Pie Chart Showing Risk Distribution
+
+ ![Task 3.2 - Risk Distribution](task%203.2.png)
+
+### Task 3.3 Develop a Risk Heat Map (High/Medium/Low) Based on Probability and Impact
+
+ ![Task 3.3 - Risk Heat Map](task%203.3.png)
+
+# Phase 2: Control Evaluation
+
+## Task 4: Cost-Benefit Analysis
+
+For each control option, calculate:
+
+- Initial Investment
+- Annual Maintenance
+- Risk Reduction (in $)
+- Return on Investment (ROI)
+- Payback Period
+
+### Formulas used:
+
+**Risk Reduction** = Current ALE x Control Effectiveness
+
+**ROI** = ((Risk Reduction - Total Cost)/Total Cost)) x 100
+
+**Payback Period** = ((Total Cost/Annual Risk Reduction)) x 12
+
+Where:
+
+Total Cost = Initial Investment + Annual Maintenance
+
+---
+
+## Task 4.1 Advanced API Security Gateway
+
+**Initial Investment**
+
+= $350,000
+
+**Annual Maintenance**
+
+= $50,000 per year
+
+**Risk Reduction (in $)**
+
+Current ALE = $750,000
+
+Control Effectiveness = 90%
+
+= $750,000 × 0.90
+
+Risk Reduction = $675,000
+
+**Return on Investment (ROI)**
+
+First-Year Total Cost:
+
+= $350,000 + $50,000 = $400,000
+
+ROI = (($675,000 - $400,000)/$400,000) × 100
+
+ROI = 68.75%
+
+**Payback Period**
+
+= ($400,000/$675,000) x 12
+
+Payback Period = 7.11 months
+
+---
+
+## Task 4.2 Web Application Firewall (WAF)
+
+**Initial Investment**
+
+= $150,000
+
+**Annual Maintenance**
+
+= $25,000 per year
+
+**Risk Reduction (in $)**
+
+Current ALE = $31,250,000
+
+Control Effectiveness = 75%
+
+= $31,250,000 x 0.75
+
+Risk Reduction = $23,437,500
+
+**Return on Investment (ROI)**
+
+First-Year Total Cost:
+
+= $150,000 + $25,000 = $175,000
+
+ROI = (($23,437,500 - $175,000)/$175,000) x 100
+
+ROI = 13,292.86%
+
+**Payback Period**
+
+= ($175,000/$23,437,500) x 12
+
+Payback Period = 0.09 months
+
+Approximately 2.7 days using a 30-day month.
+
+---
+
+## Task 4.3 Multi-Factor Authentication Enhancement
+
+**Initial Investment**
+
+= $200,000
+
+**Annual Maintenance**
+
+= $30,000 per year
+
+**Risk Reduction (in $)**
+
+Current ALE = $3,000,000
+
+Control Effectiveness = 95%
+
+= $3,000,000 × 0.95
+
+Risk Reduction = $2,850,000
+
+**Return on Investment (ROI)**
+
+First-Year Total Cost:
+
+= $200,000 + $30,000 = $230,000
+
+ROI = (($2,850,000 - $230,000)/$230,000) x 100
+
+ROI = 1,139.13%
+
+**Payback Period**
+
+= ($230,000/$2,850,000) x 12
+
+Payback Period = 0.97 months
+
+Approximately 29.1 days using a 30-day month.
+
+### Summary of Cost-Benefit Analysis
+
+| Metric | Advanced API Gateway | WAF | MFA Enhancement |
+|----------|----------|----------|----------|
+| Initial Investment | $350,000 | $150,000 | $200,000 |
+| Annual Maintenance | $50,000 | $25,000 | $30,000 |
+| Risk Reduction | $675,000 | $23,437,500 | $2,850,000 |
+| ROI | 68.75% | 13,292.86% | 1,139.13% |
+| Payback Period | 7.11 months | 0.09 months | 0.97 months |
+
+## Task 5: Control Selection Analysis
+
+### Task 5.1 Create a Scatter Plot Showing Cost vs. Effectiveness of Controls
+
