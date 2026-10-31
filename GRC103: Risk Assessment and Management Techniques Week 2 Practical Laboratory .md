@@ -356,7 +356,7 @@ Approximately 29.1 days using a 30-day month.
 ## Task 5: Control Selection Analysis
 
 ### Task 5.1 Create a Scatter Plot Showing Cost vs. Effectiveness of Controls
-![Task 5.1 - Cost vs Effectiveness](task%205.1.png)
+![Task 5.1. - Cost vs Effectiveness](task%205.1..png)
 
 ### Interpretation
 
